@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowfree.FXMLFlowBoardController">
+   <children>
+      <AnchorPane id="pane" fx:id="pane" layoutX="118.0" layoutY="32.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="panestart" layoutX="-119.0" layoutY="-33.0" prefHeight="693.0" prefWidth="700.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fx:id="image" fitHeight="700.0" fitWidth="700.0" layoutX="-2.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="btnstart" layoutX="305.0" layoutY="461.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="69.0" text="Start" />
+                  <Button fx:id="btninfo" layoutX="305.0" layoutY="529.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="69.0" text="Info" />
+                  <Button fx:id="btnback" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" text="Back" />
+                  <Label fx:id="lbllabel" layoutX="245.0" layoutY="236.0" textFill="WHITE" wrapText="true" />
+                  <Button fx:id="btnSettings" layoutX="305.0" layoutY="494.0" mnemonicParsing="false" text="Settings" />
+                  <Label fx:id="lblkleurachtergrond" layoutX="195.0" layoutY="219.0" text="Backgroundcolor" textFill="WHITE" />
+                  <Button fx:id="btnwhite" layoutX="319.0" layoutY="214.0" mnemonicParsing="false" text="White" />
+                  <Button fx:id="btnblack" layoutX="393.0" layoutY="214.0" mnemonicParsing="false" text="Black" />
+                  <Label fx:id="lblwelklevel" layoutX="22.0" layoutY="124.0" prefHeight="17.0" prefWidth="76.0" textFill="WHITE" />
+                  <Button fx:id="btnlvl1" layoutX="11.0" layoutY="53.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Level up" />
+                  <Button fx:id="btnlvl2" layoutX="11.0" layoutY="88.0" mnemonicParsing="false" text="Level down" />
+               </children></AnchorPane>
+         </children></AnchorPane>
+      <Label id="Titel" fx:id="lblintro" contentDisplay="CENTER" layoutX="168.0" layoutY="577.0" prefHeight="88.0" prefWidth="379.0" style="-fx-background-color: black;" text="FLOW FREE" textAlignment="CENTER">
+         <font>
+            <Font size="66.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9328537170263789" endY="0.49236639583383807" startX="0.20658276437314255" startY="0.5229007924786051">
+               <stops>
+                  <Stop color="#e80606" />
+                  <Stop color="#e80606" offset="0.007633587786259542" />
+                  <Stop color="#ffb404" offset="0.2665533828296558" />
+                  <Stop color="YELLOW" offset="0.4133483216563841" />
+                  <Stop color="#29e810" offset="0.5099815571771322" />
+                  <Stop color="#1d11c7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

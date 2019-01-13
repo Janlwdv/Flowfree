@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FlowFree.jnlp">
+  <information>
+    <title>FlowFree</title>
+    <vendor>GESE</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FlowFree.jar" size="323066" download="eager" />
+    <jar href="lib/gson-2.8.5.jar" size="241622" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FlowFree" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="flowfree.FlowFree"  name="FlowFree" />
+  <update check="always"/>
+</jnlp>
